@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRAVÍA - Del origen a tu mesa | Emporio Natural en Pudahuel</title>
+    <meta name="description" content="Emporio de productos frescos, locales y naturales en Pudahuel. Descubre huevos de campo, quesos artesanales, leches frescas y más.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <strong>Retiro gratis</strong> en tienda dentro de 2 horas · <strong>Despacho express</strong> por compras sobre $20.000
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="TERRAVÍA - Del origen a tu mesa">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#ubicacion">Visítanos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider">
+        <div class="slide slide-1 active">
+            <div class="slide-content">
+                <h1>Del origen a tu mesa</h1>
+                <p>Productos frescos, locales y naturales en Pudahuel</p>
+                <a href="#productos" class="cta-primary">Descubre Nuestros Productos</a>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h1>Calidad artesanal</h1>
+                <p>Cada producto cuenta una historia de dedicación y autenticidad</p>
+                <a href="#nosotros" class="cta-primary">Conoce Nuestra Historia</a>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h1>Tu emporio de barrio</h1>
+                <p>Atendiendo a Pudahuel con productos honestos y naturales</p>
+                <a href="#ubicacion" class="cta-primary">Visítanos</a>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+    </section>
+
+    <!-- DELIVERY INFO -->
+    <section class="delivery-info">
+        <div class="delivery-item">
+            <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+            <div class="delivery-text">
+                <h4>Retiro en tienda</h4>
+                <p>Dentro de 2 horas</p>
+            </div>
+        </div>
+        <div class="delivery-item">
+            <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="1.5">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <path d="M16 8V2l6 6"></path>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+            <div class="delivery-text">
+                <h4>Despacho gratis</h4>
+                <p>Compras sobre $20.000</p>
+            </div>
+        </div>
+        <div class="delivery-item">
+            <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <div class="delivery-text">
+                <h4>Atención personalizada</h4>
+                <p>De lunes a sábado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="categorias">
+        <div class="section-header">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <p class="section-subtitle">Productos seleccionados directamente de productores locales</p>
+        </div>
+        
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-image cat-huevos"></div>
+                <div class="category-overlay">
+                    <h3>Huevos de Campo</h3>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-image cat-quesos"></div>
+                <div class="category-overlay">
+                    <h3>Quesos Artesanales</h3>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-image cat-leches"></div>
+                <div class="category-overlay">
+                    <h3>Leches Frescas</h3>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-image cat-vegetarianos"></div>
+                <div class="category-overlay">
+                    <h3>Productos Vegetarianos</h3>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-image cat-despensa"></div>
+                <div class="category-overlay">
+                    <h3>Despensa Saludable</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="nosotros">
+        <div class="story-container">
+            <div class="story-image-wrapper">
+                <div class="story-image-main"></div>
+                <div class="story-badge">
+                    <strong>100%</strong>
+                    <span>NATURAL</span>
+                </div>
+            </div>
+            
+            <div class="story-content">
+                <h2>Del origen a tu mesa</h2>
+                <p>En TERRAVÍA trabajamos directamente con productores locales que comparten nuestra visión: alimentos honestos, sin procesos industriales, cultivados con respeto por la tierra y las personas.</p>
+                <p>Cada producto que encuentras en nuestras repisas tiene una historia, un origen conocido y la garantía de calidad que solo lo artesanal puede ofrecer.</p>
+                
+                <div class="story-features">
+                    <div class="feature-item">
+                        <div class="feature-icon icon-leaf"></div>
+                        <div class="feature-text">
+                            <h4>100% Natural</h4>
+                            <p>Sin conservantes ni aditivos artificiales</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-local"></div>
+                        <div class="feature-text">
+                            <h4>Productores Locales</h4>
+                            <p>Apoyamos a la comunidad</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-quality"></div>
+                        <div class="feature-text">
+                            <h4>Calidad Certificada</h4>
+                            <p>Productos verificados</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-fresh"></div>
+                        <div class="feature-text">
+                            <h4>Frescura Garantizada</h4>
+                            <p>Reposición diaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="productos">
+        <div class="section-header">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-subtitle">Una selección de lo mejor que tenemos para ti esta temporada</p>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="product-badge">Destacado</span>
+                <div class="product-image prod-huevos"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-recycle"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Frescos</p>
+                    <h3>Huevos de Campo Orgánicos</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <span class="product-badge new">Novedad</span>
+                <div class="product-image prod-queso-cabra"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-recycle"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Artesanal</p>
+                    <h3>Queso de Cabra Madurado</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image prod-granola"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-recycle"></div>
+                    </div>
+                    <div class="product-icon-badge">
+                        <div class="icon-leaf"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Despensa</p>
+                    <h3>Granola Artesanal con Miel</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <span class="product-badge promo">Promo</span>
+                <div class="product-image prod-leche-almendras"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-recycle"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Vegetal</p>
+                    <h3>Leche de Almendras Natural</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image prod-miel"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-local"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Despensa</p>
+                    <h3>Miel Orgánica de Flores</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image prod-pan"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-fresh"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Panadería</p>
+                    <h3>Pan de Masa Madre Integral</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <span class="product-badge">Destacado</span>
+                <div class="product-image prod-aceite"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-quality"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Despensa</p>
+                    <h3>Aceite de Oliva Extra Virgen</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image prod-frutos-secos"></div>
+                <div class="product-icons">
+                    <div class="product-icon-badge">
+                        <div class="icon-box"></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Snacks</p>
+                    <h3>Mix de Frutos Secos Tostados</h3>
+                    <div class="product-actions">
+                        <button class="product-cta">Ver Producto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location" id="ubicacion">
+        <div class="location-container">
+            <div class="location-content">
+                <h2>Estamos en tu barrio</h2>
+                <p>Ubicados en el corazón de Pudahuel, atendiendo a nuestra comunidad con productos honestos y naturales desde hace más de 5 años.</p>
+                <p>Te esperamos para que conozcas nuestro emporio, converses con nosotros y descubras la diferencia de lo auténtico.</p>
+                
+                <div class="location-details">
+                    <div class="location-item">
+                        <svg class="location-item-icon" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div class="location-item-text">
+                            <h4>Dirección</h4>
+                            <p>Av. Principal 1234, Pudahuel<br>Santiago, Chile</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <svg class="location-item-icon" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <div class="location-item-text">
+                            <h4>Horarios</h4>
+                            <p>Lunes a Viernes: 9:00 - 20:00<br>Sábados: 9:00 - 18:00<br>Domingos: Cerrado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <svg class="location-item-icon" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div class="location-item-text">
+                            <h4>Contacto</h4>
+                            <p>+56 9 1234 5678<br>contacto@terravia.cl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location-map-wrapper">
+                <div class="location-map"></div>
+                <div class="location-photo-badge">
+                    <div class="location-photo-small"></div>
+                    <div class="location-photo-badge-text">
+                        <h5>Nuestro Local</h5>
+                        <p>Ven a visitarnos en Pudahuel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-brand-logo">
+                    <img src="assets/images/logo.png" alt="TERRAVÍA">
+                </div>
+                <p>Del origen a tu mesa</p>
+                <div class="footer-social">
+                    <div class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </div>
+                    <div class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <div class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Comprar</h4>
+                <a href="#categorias">Todas las categorías</a>
+                <a href="#productos">Productos destacados</a>
+                <a href="#">Novedades</a>
+                <a href="#">Promociones</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Información</h4>
+                <a href="#nosotros">Quiénes somos</a>
+                <a href="#">Productores</a>
+                <a href="#">Sostenibilidad</a>
+                <a href="#">Blog</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Ayuda</h4>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Despachos</a>
+                <a href="#">Cambios y devoluciones</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 TERRAVÍA. Todos los derechos reservados. | Av. Principal 1234, Pudahuel, Santiago</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
