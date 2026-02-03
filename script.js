@@ -1,5 +1,33 @@
 // TERRAVÍA - JavaScript
 
+// MOBILE MENU TOGGLE
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer click en un link
+    const navItems = navLinks.querySelectorAll('a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        });
+    });
+
+    // Cerrar menú al hacer click fuera
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            navLinks.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        }
+    });
+}
+
 // SLIDER FUNCTIONALITY
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
@@ -40,6 +68,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// MOBILE MENU (placeholder for future implementation)
-// Add mobile menu functionality here if needed
