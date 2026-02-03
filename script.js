@@ -1,32 +1,31 @@
-// TERRAVÍA - JavaScript
+// TERRAVÍA - JavaScript con Bootstrap
 
-// MOBILE MENU TOGGLE
-const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-const navLinks = document.getElementById('navLinks');
-
-if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        mobileMenuToggle.classList.toggle('active');
-    });
-
-    // Cerrar menú al hacer click en un link
-    const navItems = navLinks.querySelectorAll('a');
-    navItems.forEach(item => {
-        item.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
-        });
-    });
-
-    // Cerrar menú al hacer click fuera
-    document.addEventListener('click', (e) => {
-        if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-            navLinks.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                // Cerrar navbar móvil si está abierto
+                const navbarCollapse = document.getElementById('navbarMain');
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+                
+                // Scroll suave
+                setTimeout(() => {
+                    target.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }, 300);
+            }
         }
     });
-}
+});
 
 // SLIDER FUNCTIONALITY
 let currentSlide = 0;
@@ -55,16 +54,20 @@ dots.forEach((dot, index) => {
     dot.addEventListener('click', () => showSlide(index));
 });
 
-// SMOOTH SCROLL
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'start' 
-            });
-        }
-    });
+// NAVBAR SCROLL EFFECT
+let lastScroll = 0;
+const header = document.querySelector('.header-bootstrap');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
 });
+
+console.log('✅ TERRAVÍA - Bootstrap Navigation Ready');

@@ -5,50 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TERRAVÍA - Del origen a tu mesa | Emporio Natural en Pudahuel</title>
     <meta name="description" content="Emporio de productos frescos, locales y naturales en Pudahuel. Descubre huevos de campo, quesos artesanales, leches frescas y más.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- TOP BAR -->
-    <div class="top-bar">
-        <strong>Retiro gratis</strong> en tienda dentro de 2 horas · <strong>Despacho express</strong> por compras sobre $20.000
-    </div>
 
     <!-- HEADER -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="TERRAVÍA - Del origen a tu mesa">
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#ubicacion">Visítanos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="nav-icons">
-                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="m21 21-4.35-4.35"></path>
-                </svg>
-                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6456" stroke-width="2">
-                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg>
-                <!-- Mobile Menu Toggle -->
-                <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header class="header-bootstrap sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container-fluid px-4 px-lg-5">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/images/logo.png" alt="TERRAVÍA" class="logo-img me-2">
+                    <span class="brand-text d-none d-md-inline">
+                        <span class="brand-name">TERRAVÍA</span>
+                        <small class="brand-tagline d-block">Del origen a tu mesa</small>
+                    </span>
+                </a>
+                
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium position-relative" href="#productos">
+                                <i class="bi bi-basket me-2"></i>Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium position-relative" href="#categorias">
+                                <i class="bi bi-grid me-2"></i>Categorías
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium position-relative" href="#nosotros">
+                                <i class="bi bi-heart me-2"></i>Nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium position-relative" href="#ubicacion">
+                                <i class="bi bi-geo-alt me-2"></i>Visítanos
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Action Icons -->
+                    <div class="d-flex align-items-center gap-3">
+                        <button class="btn btn-icon" aria-label="Buscar">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <button class="btn btn-icon" aria-label="Cuenta">
+                            <i class="bi bi-person"></i>
+                        </button>
+                        <button class="btn btn-icon position-relative" aria-label="Carrito">
+                            <i class="bi bi-bag"></i>
+                            <span class="cart-badge">0</span>
+                        </button>
+                        <a href="#contacto" class="btn btn-primary-custom d-none d-lg-inline-flex">
+                            <i class="bi bi-telephone me-2"></i>
+                            Contáctanos
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
+        
+        <!-- Info Bar -->
+        <div class="info-bar">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-5 py-2">
+                    <div class="info-item">
+                        <i class="bi bi-truck me-2"></i>
+                        <span><strong>Despacho gratis</strong> sobre $30.000</span>
+                    </div>
+                    <div class="info-item d-none d-md-flex">
+                        <i class="bi bi-shop me-2"></i>
+                        <span><strong>Retiro en tienda</strong> en 2 horas</span>
+                    </div>
+                    <div class="info-item d-none d-lg-flex">
+                        <i class="bi bi-award me-2"></i>
+                        <span><strong>100% productos</strong> naturales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- HERO SLIDER -->
@@ -101,7 +154,7 @@
             </svg>
             <div class="delivery-text">
                 <h4>Despacho gratis</h4>
-                <p>Compras sobre $20.000</p>
+                <p>Compras sobre $30.000</p>
             </div>
         </div>
         <div class="delivery-item">
@@ -361,7 +414,7 @@
         <div class="location-container">
             <div class="location-content">
                 <h2>Estamos en tu barrio</h2>
-                <p>Ubicados en el corazón de Pudahuel, atendiendo a nuestra comunidad con productos honestos y naturales desde hace más de 5 años.</p>
+                <p>Ubicados en el corazón de Pudahuel, atendiendo a nuestra comunidad con productos honestos y naturales, innovando constantemente para ofrecerte lo mejor.</p>
                 <p>Te esperamos para que conozcas nuestro emporio, converses con nosotros y descubras la diferencia de lo auténtico.</p>
                 
                 <div class="location-details">
@@ -372,7 +425,7 @@
                         </svg>
                         <div class="location-item-text">
                             <h4>Dirección</h4>
-                            <p>Av. Principal 1234, Pudahuel<br>Santiago, Chile</p>
+                            <p>Mar del Sur 8025, Pudahuel<br>Santiago, Chile</p>
                         </div>
                     </div>
                     
@@ -393,7 +446,7 @@
                         </svg>
                         <div class="location-item-text">
                             <h4>Contacto</h4>
-                            <p>+56 9 1234 5678<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e98a86879d888a9d86a99d8c9b9b889f8088c78a85">[email&#160;protected]</a></p>
+                            <p>+56 9 2803 2627<br>contacto@terravia.cl</p>
                         </div>
                     </div>
                 </div>
@@ -468,10 +521,13 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2026 TERRAVÍA. Todos los derechos reservados. | Av. Principal 1234, Pudahuel, Santiago</p>
+            <p>&copy; 2026 TERRAVÍA. Todos los derechos reservados. | Mar del Sur 8025, Pudahuel, Santiago</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
